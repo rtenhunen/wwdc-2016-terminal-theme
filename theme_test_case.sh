@@ -28,7 +28,8 @@ function test_OS_version () { #  (Nil) -> String
 }
 
 function print_wwdc_intro () { # (Nil) -> String
-	printf "${GREEN}W${MAGENTA}W${YELLOW}D${RED}C${CYAN}16${NORMAL} theme - now in terminal (idea for the theme inspired by ${CYAN}developer${NORMAL}.${GREEN}apple${NORMAL}.${YELLOW}com${NORMAL}/${RED}wwdc${NORMAL})\n\n"
+	printf "${GREEN}W${MAGENTA}W${YELLOW}D${RED}C${CYAN}16${NORMAL} theme - now in terminal (idea for the theme inspired by ${CYAN}developer${NORMAL}.${GREEN}apple${NORMAL}.${YELLOW}com${NORMAL}/${RED}wwdc${NORMAL})\n\n\n"
+	printf "${WHITE}${GREEN}W${MAGENTA}W${YELLOW}D${RED}C${CYAN}16${NORMAL}\n\n"
 	printf "${CYAN}print" # teal
 	printf "${NORMAL}(" # white
 	printf "${RED}\"Hello, WWDC!\"" # red
