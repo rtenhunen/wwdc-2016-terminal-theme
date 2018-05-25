@@ -14,7 +14,7 @@ MAGENTA=$(tput setaf 5)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
 LIGHT_GREEN=$(tput setaf 10)
-LILAC=$(tput setaf 13) # "Bright Magenta"
+PURPLE=$(tput setaf 13) # "Bright Magenta"
 
 
 function test_OS_version () { #  (Nil) -> String
@@ -23,7 +23,7 @@ function test_OS_version () { #  (Nil) -> String
 
 	read MAJOR MINOR <<< $(sw_vers -productVersion | awk -F "." '{print $1" "$2}')
 	if [[ $MAJOR -lt 10 || $MINOR -lt 12 ]]; then
-		printf "${YELLOW}WARNING:\t${GREEN}W${MAGENTA}W${YELLOW}D${RED}C${CYAN}16${NORMAL} theme uses ${MAGENTA}\"SF Mono\"${NORMAL} font which is bundled with ${CYAN}mac${GREEN}OS ${YELLOW}10${NORMAL}.${RED}12 ${LILAC}Sierra${NORMAL}.\n\t\tYou should either update your OS, or make sure you change the terminal font.\n\n" 
+		printf "${YELLOW}WARNING:\t${GREEN}W${MAGENTA}W${YELLOW}D${RED}C${CYAN}16${NORMAL} theme uses ${MAGENTA}\"SF Mono\"${NORMAL} font which is bundled with ${CYAN}mac${GREEN}OS ${YELLOW}10${NORMAL}.${RED}12 ${PURPLE}Sierra${NORMAL}.\n\t\tYou should either update your OS, or make sure you change the terminal font.\n\n" 
 	fi
 }
 
@@ -34,7 +34,7 @@ function print_wwdc_intro () { # (Nil) -> String
 	printf "${NORMAL}(" # white
 	printf "${RED}\"Hello, WWDC!\"" # red
 	printf "${NORMAL})\n" # white
-	printf "${LILAC}Hello love at first swipe.\n" # lilac
+	printf "${PURPLE}Hello love at first swipe.\n" # lilac
 	printf "${YELLOW}Hello other side of the road.\n" # yellow
 	printf "${RED}Hello yogi on my wrist.\n" # red
 	printf "${MAGENTA}Hello driver, fast as you can.\n" # magenta
@@ -44,7 +44,7 @@ function print_wwdc_intro () { # (Nil) -> String
 	printf "${MAGENTA}Hello double tap heart.\n" # mangenta
 	printf "${YELLOW}Hello rain in five minutes.\n" # Yellow
 	printf "${GREEN}Hello 6 seconds of fame.\n" # green
-	printf "${LILAC}Hello big idea.\n\n\n" # lilac
+	printf "${PURPLE}Hello big idea.\n\n\n" # lilac
 	printf "${LIGHT_GREEN}/* San Francisco, June 13-17 */\n\n" # light-green
 	printf "${NORMAL}learnMore()\n\n"
 }
